@@ -1,0 +1,5 @@
+vendor
+.env
+
+# which composer file should be used
+COMPOSER=composer.json

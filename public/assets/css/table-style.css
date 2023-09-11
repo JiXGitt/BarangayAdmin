@@ -1,0 +1,23 @@
+/* .table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: inherit;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+*/
+
+/* make the table header title responsive */
+.table-header-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px;
+}

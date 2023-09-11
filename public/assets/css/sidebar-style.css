@@ -1,0 +1,80 @@
+.sidebar {
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #f0f0f0;
+
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar ul li a {
+    color: #000;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 10px 10px 50px;
+    transition: 0.3s;
+}
+
+/* when the link is hovered change the color to beautiful color */
+.sidebar ul li:hover a {
+    color: hsl(0, 26%, 7%);
+    transform: translateX(10px);
+}
+
+.sidebar ul li a .fa {
+    margin-right: 10px;
+}
+/* before and after hovering the link */
+.sidebar ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    transition: 0.3s;
+    /* appropriate bg color */
+    background-color: hsl(25, 81%, 26%);
+}
+
+.sidebar ul li a:hover:before {
+    width: 100%;
+    /* make the text visible */
+    background-color: hsl(25, 90%, 50%);
+    opacity: 0.3;
+    /* change the border */
+    border-radius: 20px 10px 5px 0;
+    /* animate */
+
+}
+
+/* .sidebar ul li a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #ccc;
+    background-color: #0054d1;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover:after {
+    transform: scaleX(1);
+} */
+
+/* end */

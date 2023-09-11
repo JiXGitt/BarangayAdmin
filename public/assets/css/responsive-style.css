@@ -1,0 +1,84 @@
+/* hide the text when screen is below 768px */
+@media screen and (max-width: 768px) {
+
+    .hide {
+        display: none;
+    }
+
+    /* make the sidebar into a fixed position */
+    .sidebar {
+        /* inherit the current width of the viewport */
+        /* change the width */
+        width: 100%;
+        background-color: #fff;
+        /* center all */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* make the sidebar margin close to the viewport */
+        margin-left: -30px;
+        /* make the sidebar width 100% */
+    }
+
+    .sidebar ul {
+        list-style: none;
+        background-color: #fff;
+    }
+
+    .sidebar ul li a {
+        padding: 10px;
+    }
+
+    /* when the link is hovered, show the name */
+    .sidebar ul li a:hover {
+        padding: 10px 10px 10px 10px;
+    }
+
+    /* when the link is hovered, show the name */
+    .sidebar ul li a:hover:before {
+        background-color: hsl(25, 90%, 50%);
+        opacity: 0.3;
+        border-radius: 20px 10px 5px 0;
+    }
+
+    /* when the link is hovered, show the name */
+    .sidebar ul li a:hover:after {
+        transform: scaleX(1);
+        scale: 1;
+    }
+
+    /* when the link is hovered, show the name */
+    .sidebar ul li a:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #ccc;
+        background-color: #0054d1;
+        transform: scaleX(0);
+        transition: 0.3s;
+    }
+
+    /* admin header text size */
+    .admin-header p {
+        font-size: 0.538rem;
+        /* justify */
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    /* make the cards align */
+    .card-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .sidebar ul li a:before {
+        display: none;
+    }
+
+}

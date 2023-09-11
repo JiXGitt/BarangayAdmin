@@ -1,0 +1,39 @@
+/* styles.css */
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+body,
+html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    display: flex;
+}
+
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* make the admin header class responsive */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    /* text vertical spacing */
+    line-height: 1.5;
+}
+

@@ -1,0 +1,97 @@
+/* boxicon */
+.bx {
+    display: inline-block;
+    font-size: inherit;
+    user-select: none;
+    transition: 0.15s ease-in-out;
+    vertical-align: middle;
+    fill: currentColor;
+    stroke: 0;
+    stroke-width: 1;
+    margin-right: 5px;
+}
+
+.bx-tada:hover {
+    animation: tada 1s ease-in-out infinite;
+}
+
+@keyframes tada {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%,
+    20% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+.bx-spin:hover {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bx-flashing:hover {
+    animation: flashing 1s linear infinite;
+}
+
+@keyframes flashing {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.bx-burst:hover {
+    animation: burst 1s linear infinite;
+}
+
+@keyframes burst {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* end */
